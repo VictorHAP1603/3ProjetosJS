@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="imagem">
+            <img src="./img/financial_data.png" alt="Formulário">
+        </div>
+        <div class="form">
+            <form action="enviado.html" method="GET" class="b7validator">
+                <h2>Crie uma conta</h2>
+                <label for="nome"> Seu Nome:
+                    <input type="text" id="nome" data-rules="required|min=5">
+                </label>
+
+                <label for="email"> Seu E-mail:
+                    <input type="text" id="email" data-rules="required|email">
+                </label>
+
+                <label for="senha"> Sua Senha:
+                    <input type="password" id="senha" data-rules="required|min=5">
+                </label>
+
+                <label for="submit">
+                    <input type="submit" id="submit" value="Cadastrar"> 
+                </label>
+                <p> Já tem uma conta? <a href="">Entre aqui!</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html> 
